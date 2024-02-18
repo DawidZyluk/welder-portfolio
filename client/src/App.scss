@@ -3,6 +3,16 @@
   font-family: var(--font-base);
 }
 
+.section {
+  min-height: 60vh;
+  padding: 4rem;
+  background-color: #b9b9b9;
+  
+  &:nth-child(2n) {
+    background-color: #f0f0f0;
+  }
+}
+
 .app__whitebg {
   background-color: #f8f8f8;
 }

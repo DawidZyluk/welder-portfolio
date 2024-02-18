@@ -1,0 +1,57 @@
+.app__navbar {
+  height: 5.5rem;
+  background-color: rgba($color: #fff, $alpha: 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  font-size: 1.5rem;
+  width: 100%;
+
+  ul {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &-link {
+    list-style: none;
+    font-weight: 500;
+    transition: all 0.2s;
+    transition-delay: 0.15s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: rgb(110, 110, 110);
+      text-transform: uppercase;
+      transition: all .2s;
+    }
+
+    div {
+      width: 0%;
+      height: 1px;
+      background-color: transparent;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      a {
+        color: var(--secondary-color);
+      }
+    }
+  }
+  .active {
+    a {
+      color: var(--secondary-color);
+    }
+    div {
+      width: 100%;
+      background-color: var(--secondary-color);
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.app__header {
+  flex: 1;
+  width: 90%;
+  font-size: 1.5rem;
+  margin: 4rem 2rem;
+  justify-content: center;
+
+  &-info {
+    flex: .8;
+    margin-top: 5rem;
+
+    .info-title {
+      font-size: 6rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #3d3d3d;
+    }
+
+    span {
+      font-size: 2.2rem;
+      display: block;
+      color: #6e6e6e;
+      margin-bottom: 2rem;
+    }
+
+    .info-desc {
+      font-size: 1.8rem;
+      width: 90%;
+    }
+
+    .info-cta {
+      margin-top: 3rem;
+
+      button {
+        font-size: 2rem;
+        border: 2px solid var(--secondary-color);
+        padding: 1.2rem 2.4rem;
+        border-radius: .4em;
+        background-color: transparent;
+        color: #3d3d3d;
+        transition: all .3s;
+        box-shadow: 0 5px 25px 2px #3d3d3d22;
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--secondary-color);
+          color: white;
+        }
+      }
+
+      .info-contact {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+
+        div {
+          display: flex;
+          align-items: center;
+          height: 5rem;
+          font-size: 2rem;
+          color: #3d3d3d;
+        }
+
+        svg {
+          font-size: 2.4rem;
+          margin-right: 1rem;
+          color: var(--secondary-color);
+        }
+
+        .email {
+          
+        }
+  
+        .phone {
+  
+        }
+
+      }
+
+    }
+  }
+
+  &-profile {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .profile-background {
+      z-index: 0;
+      object-fit: contain;
+      height: 40rem;
+      filter: opacity(25%);
+      
+    }
+
+    .profile-photo {
+      height: 60rem;
+      position: absolute;
+      object-fit: contain;
+      z-index: 4;
+    }
+  }
+}
