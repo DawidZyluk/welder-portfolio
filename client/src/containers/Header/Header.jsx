@@ -28,7 +28,6 @@ const Header = () => {
             materiałów oraz wykonywaniu spawania różnymi metodami.
           </div>
           <div className="info-cta">
-            
             <div className="info-contact">
               <div className="email">
                 <FiMail />
@@ -51,33 +50,41 @@ const Header = () => {
         <div className="skills-badges">
           <div className="skill">
             <img src={welding} alt="" />
-            <div className="title">Spawanie</div>
-            <p className="desc">
-              Spawanie różnymi metodami, trwałe i estetyczne połączenia
-            </p>
+            <div className="text">
+              <div className="title">Spawanie</div>
+              <p className="desc">
+                Spawanie różnymi metodami, trwałe i estetyczne połączenia
+              </p>
+            </div>
           </div>
           <div className="skill">
             <img src={beam} alt="" />
-            <div className="title">Obróbka metali</div>
-            <p className="desc">
-              precyzyjna obróbka metali, obejmująca
-              cięcie, gięcie i frezowanie
-            </p>
+            <div className="text">
+              <div className="title">Obróbka metali</div>
+              <p className="desc">
+                precyzyjna obróbka metali, obejmująca cięcie, gięcie i
+                frezowanie
+              </p>
+            </div>
           </div>
           <div className="skill">
             <img src={car} alt="" />
-            <div className="title">Mechanika pojazdowa</div>
-            <p className="desc">
-              diagnozowanie, naprawa i konserwacja pojazdów.
-            </p>
+            <div className="text">
+              <div className="title">Mechanika pojazdowa</div>
+              <p className="desc">
+                diagnozowanie, naprawa i konserwacja pojazdów.
+              </p>
+            </div>
           </div>
           <div className="skill">
             <img src={gate} alt="" />
-            <div className="title">Bramy i ogrodzenia</div>
-            <p className="desc">
-              projektowanie i montaż solidnych i
-              estetycznych bram oraz ogrodzeń
-            </p>
+            <div className="text">
+              <div className="title">Bramy i ogrodzenia</div>
+              <p className="desc">
+                projektowanie i montaż solidnych i estetycznych bram oraz
+                ogrodzeń
+              </p>
+            </div>
           </div>
         </div>
       </div>

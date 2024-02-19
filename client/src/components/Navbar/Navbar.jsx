@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
-import { useVisibleSection } from "../../hooks/useVisibleSection";
+import Button from "./Button";
 
 const sections = [
   {
@@ -46,6 +46,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <Button />
     </div>
   );
 };
