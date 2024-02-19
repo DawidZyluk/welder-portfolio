@@ -1,5 +1,6 @@
 import React from 'react'
 import './Skills.scss'
+import SectionWrap from '../../wrappers/SectionWrap'
 
 
 const Skills = () => {
@@ -8,4 +9,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default SectionWrap(Skills, 'skills')

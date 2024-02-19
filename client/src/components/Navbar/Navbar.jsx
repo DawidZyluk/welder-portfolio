@@ -5,33 +5,29 @@ import { useVisibleSection } from "../../hooks/useVisibleSection";
 const sections = [
   {
     id: "home",
-    title: "Header",
+    title: "home",
     color: "#216fed",
   },
   {
     id: "about",
-    title: "About",
+    title: "o mnie",
     color: "#fcba03",
   },
   {
     id: "skills",
-    title: "Skills",
+    title: "umiejętności",
     color: "#1fab38",
   },
   {
     id: "work",
-    title: "Work",
+    title: "Praca",
     color: "#ed2121",
-  },
-  {
-    id: "footer",
-    title: "Footer",
-    color: "#fcba03",
   },
 ];
 
 const Navbar = () => {
   const visibleSection = useVisibleSection(sections);
+  console.log(visibleSection)
   return (
     <div className="app__navbar">
       <ul>

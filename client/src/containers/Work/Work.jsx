@@ -1,8 +1,9 @@
 import React from "react";
 import "./Work.scss";
+import SectionWrap from "../../wrappers/SectionWrap";
 
 const Work = () => {
-  return <div id="work">Work</div>;
+  return <div>Work</div>;
 };
 
-export default Work;
+export default SectionWrap(Work, 'work');
