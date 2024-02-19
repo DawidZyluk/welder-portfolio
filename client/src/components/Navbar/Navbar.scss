@@ -1,6 +1,5 @@
 .app__navbar {
   height: 6rem;
-  background-color: rgba($color: #000000, $alpha: 0.45);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +7,8 @@
   font-size: 1.7rem;
   width: 100%;
   z-index: 6;
+  background-color: rgba($color: #000000, $alpha: 0.85);
+  transition: .5s;
 
   ul {
     width: 40%;
@@ -25,12 +26,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     a {
       text-decoration: none;
       color: rgb(238, 238, 238);
       text-transform: uppercase;
-      transition: all .2s;
+      transition: all 0.2s;
     }
 
     div {
@@ -45,6 +47,11 @@
       a {
         color: var(--secondary-color);
       }
+
+      div {
+        width: 100%;
+        background-color: var(--secondary-color);
+      }
     }
   }
   .active {
@@ -56,4 +63,8 @@
       background-color: var(--secondary-color);
     }
   }
+}
+
+.opacity {
+  background-color: transparent;
 }

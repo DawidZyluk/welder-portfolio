@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.scss";
 import { useVisibleSection } from "../../hooks/useVisibleSection";
 
@@ -26,18 +26,21 @@ const sections = [
 ];
 
 const Navbar = () => {
-  const visibleSection = useVisibleSection(sections);
-  console.log(visibleSection)
+  const [opacity, setOpacity] = useState(true)
+
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 50) {
+      setOpacity(false)
+    } else {
+      setOpacity(true)
+    }
+  })
+
   return (
-    <div className="app__navbar">
+    <div id="navbar" className={`${opacity ? 'app__navbar opacity' : 'app__navbar'}`}>
       <ul>
         {sections.map((data) => (
-          <li
-            key={data.id}
-            className={`app__navbar-link ${
-              visibleSection === data.id ? "active" : ""
-            }`}
-          >
+          <li key={data.id} className="app__navbar-link">
             <a href={`#${data.id}`}>{data.title}</a>
             <div />
           </li>
