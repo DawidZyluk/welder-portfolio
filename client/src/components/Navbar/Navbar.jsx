@@ -14,13 +14,8 @@ const sections = [
     color: "#fcba03",
   },
   {
-    id: "skills",
-    title: "umiejętności",
-    color: "#1fab38",
-  },
-  {
     id: "work",
-    title: "Praca",
+    title: "Projekty",
     color: "#ed2121",
   },
 ];
