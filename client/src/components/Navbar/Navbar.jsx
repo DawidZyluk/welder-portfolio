@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import Button from "./Button";
+import logo from "../../assets/logo2.png";
 
 const sections = [
   {
@@ -41,14 +42,19 @@ const Navbar = () => {
       id="navbar"
       className={`${opacity ? "app__navbar opacity" : "app__navbar"}`}
     >
-      <ul>
-        {sections.map((data) => (
-          <li key={data.id} className="app__navbar-link">
-            <a href={`#${data.id}`}>{data.title}</a>
-            <div />
-          </li>
-        ))}
-      </ul>
+      <div className="logo">
+        <img src={logo} alt="" />
+      </div>
+      <div className="nav">
+        <ul>
+          {sections.map((data) => (
+            <li key={data.id} className="app__navbar-link">
+              <a href={`#${data.id}`}>{data.title}</a>
+              <div />
+            </li>
+          ))}
+        </ul>
+      </div>
       <Button />
     </div>
   );
