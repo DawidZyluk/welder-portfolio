@@ -9,6 +9,11 @@ const sections = [
     color: "#216fed",
   },
   {
+    id: "skills",
+    title: "umiejętnośći",
+    color: "#fcba03",
+  },
+  {
     id: "about",
     title: "o mnie",
     color: "#fcba03",
@@ -21,18 +26,21 @@ const sections = [
 ];
 
 const Navbar = () => {
-  const [opacity, setOpacity] = useState(true)
+  const [opacity, setOpacity] = useState(true);
 
-  window.addEventListener('scroll', () => {
-    if(window.scrollY > 50) {
-      setOpacity(false)
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      setOpacity(false);
     } else {
-      setOpacity(true)
+      setOpacity(true);
     }
-  })
+  });
 
   return (
-    <div id="navbar" className={`${opacity ? 'app__navbar opacity' : 'app__navbar'}`}>
+    <div
+      id="navbar"
+      className={`${opacity ? "app__navbar opacity" : "app__navbar"}`}
+    >
       <ul>
         {sections.map((data) => (
           <li key={data.id} className="app__navbar-link">

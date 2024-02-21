@@ -1,0 +1,53 @@
+.app__header-skills {
+  width: 100%;
+  z-index: 4;
+  display: flex;
+  justify-content: space-around;
+  background-color: #272727;
+  color: var(--primary-color);
+
+  .skills-badges {
+    display: flex;
+    padding: 8rem;
+  }
+
+  .skill {
+    width: 40%;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .text {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .title {
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin: 3rem 0 1rem;
+      }
+
+      .desc {
+        padding: 0 2rem;
+        font-size: 1.8rem;
+        text-align: center;
+        color: var(--lightGray-color);
+      }
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid gray;
+    }
+
+    img {
+      border: 2px solid black;
+      border-radius: 1rem;
+      padding: 1.2rem;
+      width: 12rem;
+      height: 12rem;
+      filter: invert(93%);
+    }
+  }
+}

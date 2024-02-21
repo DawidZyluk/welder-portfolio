@@ -12,6 +12,7 @@ import gate from "../../assets/gate.png";
 import farba from "../../assets/farba.png";
 import { FiMail } from "react-icons/fi";
 import { FiPhone } from "react-icons/fi";
+import { FiMapPin } from "react-icons/fi";
 
 const Header = () => {
   return (
@@ -37,6 +38,10 @@ const Header = () => {
                 <FiPhone />
                 +48 321 654 987
               </div>
+              <div className="map">
+                <FiMapPin />
+                Trzebnice 137, 59-140 Chocianów
+              </div>
             </div>
           </div>
         </div>
@@ -44,48 +49,6 @@ const Header = () => {
           <img src={jason} alt="" className="profile-photo" />
           <div className="fade"></div>
           <img src={farba} alt="" className="profile-background" />
-        </div>
-      </div>
-      <div className="app__header-skills">
-        <div className="skills-badges">
-          <div className="skill">
-            <img src={welding} alt="" />
-            <div className="text">
-              <div className="title">Spawanie</div>
-              <p className="desc">
-                Spawanie różnymi metodami, trwałe i estetyczne połączenia
-              </p>
-            </div>
-          </div>
-          <div className="skill">
-            <img src={beam} alt="" />
-            <div className="text">
-              <div className="title">Obróbka metali</div>
-              <p className="desc">
-                precyzyjna obróbka metali, obejmująca cięcie, gięcie i
-                frezowanie
-              </p>
-            </div>
-          </div>
-          <div className="skill">
-            <img src={car} alt="" />
-            <div className="text">
-              <div className="title">Mechanika pojazdowa</div>
-              <p className="desc">
-                diagnozowanie, naprawa i konserwacja pojazdów.
-              </p>
-            </div>
-          </div>
-          <div className="skill">
-            <img src={gate} alt="" />
-            <div className="text">
-              <div className="title">Bramy i ogrodzenia</div>
-              <p className="desc">
-                projektowanie i montaż solidnych i estetycznych bram oraz
-                ogrodzeń
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </>
