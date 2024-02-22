@@ -39,8 +39,13 @@
       justify-content: space-around;
   
       @media screen and (max-width: 1600px) {
+        width: 60%;
+      }
+
+      @media screen and (max-width: 1300px) {
         width: 70%;
       }
+  
   
       @media screen and (max-width: 900px) {
         display: none;

@@ -3,6 +3,12 @@
   font-family: var(--font-base);
 }
 
+.app__toaster {
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+
 .app__whitebg {
   background-color: #f8f8f8;
 }
@@ -15,7 +21,6 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-
 }
 
 .app__flex {
@@ -29,24 +34,6 @@
   width: 100%;
   flex-direction: column;
   min-height: 40rem;
-  
-
- 
-}
-
-.copyright {
-  width: 100%;
-  padding: 2rem 0 0;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-
-  p {
-    text-transform: uppercase;
-    color: var(--black-color);
-  }
 }
 
 .head-text {
@@ -179,9 +166,5 @@
   .app__navigation,
   .app__social {
     display: none;
-  }
-
-  .copyright {
-    padding: 2rem;
   }
 }

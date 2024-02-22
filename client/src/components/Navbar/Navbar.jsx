@@ -24,6 +24,11 @@ const sections = [
     title: "Projekty",
     color: "#ed2121",
   },
+  {
+    id: "contact",
+    title: "Kontakt",
+    color: "#ed2121",
+  },
 ];
 
 const Navbar = () => {
