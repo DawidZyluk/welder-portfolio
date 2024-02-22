@@ -14,32 +14,28 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    // emailjs
-    //   .sendForm(
-    //     import.meta.env.VITE_SERVICE_ID,
-    //     import.meta.env.VITE_TEMPLATE_ID,
-    //     e.target,
-    //     {
-    //       publicKey: import.meta.env.VITE_EMAIL_KEY,
-    //     }
-    //   )
-    //   .then(
-    //     () => {
-    //       setIsSent(true);
-    //       toast.success("Wysłano wiadomość!");
-    //     },
-    //     (error) => {
-    //       toast.error("Nie udało się wysłać wiadomośći");
-    //     }
-    //   );
-    
     setLoading(true);
-    setTimeout(() => {
-      setIsSent(true);
-      toast.success("Wysłano wiadomość!");
-      setLoading(false);
-    }, 1000);
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        e.target,
+        {
+          publicKey: import.meta.env.VITE_EMAIL_KEY,
+        }
+      )
+      .then(
+        () => {
+          setIsSent(true);
+          toast.success("Wysłano wiadomość!");
+          setLoading(false);
+        },
+        (error) => {
+          toast.error("Nie udało się wysłać wiadomośći");
+          setLoading(false);
+        }
+      );
   };
 
   return (
