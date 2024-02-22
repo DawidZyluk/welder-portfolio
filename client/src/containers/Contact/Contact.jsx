@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SectionWrap from "../../wrappers/SectionWrap";
 import Map from "./Map";
 import emailjs from "@emailjs/browser";
-
+import { Oval } from "react-loader-spinner";
 import "./Contact.scss";
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 import toast from "react-hot-toast";
@@ -10,28 +10,36 @@ import MessageSent from "./MessageSent";
 
 const Contact = () => {
   const [isSent, setIsSent] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        e.target,
-        {
-          publicKey: import.meta.env.VITE_EMAIL_KEY,
-        }
-      )
-      .then(
-        () => {
-          setIsSent(true);
-          toast.success("Wysłano wiadomość!");
-        },
-        (error) => {
-          toast.error("Nie udało się wysłać wiadomośći");
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     import.meta.env.VITE_SERVICE_ID,
+    //     import.meta.env.VITE_TEMPLATE_ID,
+    //     e.target,
+    //     {
+    //       publicKey: import.meta.env.VITE_EMAIL_KEY,
+    //     }
+    //   )
+    //   .then(
+    //     () => {
+    //       setIsSent(true);
+    //       toast.success("Wysłano wiadomość!");
+    //     },
+    //     (error) => {
+    //       toast.error("Nie udało się wysłać wiadomośći");
+    //     }
+    //   );
+    
+    setLoading(true);
+    setTimeout(() => {
+      setIsSent(true);
+      toast.success("Wysłano wiadomość!");
+      setLoading(false);
+    }, 1000);
   };
 
   return (
@@ -45,7 +53,7 @@ const Contact = () => {
               Masz pytania? <br /> Skontaktuj się z nami!
             </p>
           </div>
-          <div class="contact-details">
+          <div className="contact-details">
             <div className="email">
               <FiMail />
               ladrowski@email.com
@@ -61,7 +69,20 @@ const Contact = () => {
           </div>
         </div>
         {isSent ? (
-          <MessageSent setIsSent={setIsSent}/>
+          <MessageSent setIsSent={setIsSent} />
+        ) : loading ? (
+          <div className="loading">
+            <Oval
+              visible={true}
+              height="80"
+              width="80"
+              color="#e4be17"
+              ariaLabel="oval-loading"
+              secondaryColor="#2b2b2b"
+              wrapperStyle={{}}
+              wrapperClass=""
+            />
+          </div>
         ) : (
           <div className="form">
             <form action="" onSubmit={sendEmail}>

@@ -22,6 +22,14 @@
     flex-direction: column;
     justify-content: space-between;
 
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
     .cta {
       display: flex;
       align-items: center;
@@ -160,16 +168,28 @@
     .form-info {
       margin-top: 10rem;
       height: 100%;
-
+      
       .title {
         font-size: 4rem;
         font-weight: bold;
         margin-bottom: 3rem;
+
+        @media screen and (max-width: 1300px) {
+          text-align: center;
+        }
       }
 
       .desc {
         font-size: 2.5rem;
         color: #c2c2c2;
+      }
+
+      @media screen and (max-width: 1300px) {
+        margin: 0;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     }
 
@@ -191,6 +211,10 @@
         background-color: var(--secondary-color);
         border: 2px solid var(--secondary-color);
       }
+    }
+
+    @media screen and (max-width: 1300px) {
+      min-height: 823px;
     }
 
     @media screen and (max-width: 700px) {
