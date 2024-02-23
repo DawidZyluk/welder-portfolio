@@ -2,24 +2,41 @@ import React from "react";
 import "./Header.scss";
 import SectionWrap from "../../wrappers/SectionWrap";
 import jason from "../../assets/jason.png";
-import jason2 from "../../assets/jason2.png";
-import jason3 from "../../assets/jason3.png";
-import background2 from "../../assets/background2.jpg";
-import welding from "../../assets/welding.png";
-import beam from "../../assets/beam.png";
-import car from "../../assets/car.png";
-import gate from "../../assets/gate.png";
 import farba from "../../assets/farba.png";
 import { FiMail } from "react-icons/fi";
 import { FiPhone } from "react-icons/fi";
 import { FiMapPin } from "react-icons/fi";
+import { motion } from "framer-motion";
+
+const text = {
+  hidden: { x: -200, opacity: 0 },
+  show: {
+    x: 0,
+    opacity: 1,
+    transition: { delay: 0.2, duration: 0.5, ease: "easeInOut" },
+  },
+};
+
+const background = {
+  hidden: { scale: 0 },
+  show: {
+    scale: 1,
+    transition: { delay: 0.6, duration: 0.5, ease: "easeInOut" },
+  },
+};
 
 const Header = () => {
   return (
     <>
       <div className="app__header app__flex">
         <div className="app__header-overlay" />
-        <div className="app__header-info">
+        <motion.div
+          className="app__header-info"
+          variants={text}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
           <div className="info-title">Henryk Ladrowski</div>
           <span>Spawacz / Metalurg</span>
           <div className="info-desc">
@@ -44,11 +61,30 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="app__header-profile">
-          <img src={jason} alt="" className="profile-photo" />
+          <motion.img
+            whileInView={{
+              y: [-100, 0],
+              opacity: [0, 1],
+              transition: { delay: 0.2, duration: 0.5 },
+            }}
+            src={jason}
+            alt=""
+            className="profile-photo"
+            viewport={{ once: true }}
+          />
           <div className="fade"></div>
-          <img src={farba} alt="" className="profile-background" />
+          <motion.img
+            variants={background}
+            initial="hidden"
+            whileInView="show"
+            className="profile-background"
+            src={farba}
+            alt="circle"
+            viewport={{ once: true }}
+            // viewport={{ once: true }}
+          />
         </div>
       </div>
     </>

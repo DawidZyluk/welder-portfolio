@@ -18,8 +18,12 @@ const navItems = [
     href: "/#skills",
   },
   {
-    title: "Praca",
+    title: "Projekty",
     href: "/#work",
+  },
+  {
+    title: "Kontakt",
+    href: "/#contact",
   },
 ];
 
