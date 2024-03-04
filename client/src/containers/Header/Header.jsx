@@ -3,6 +3,9 @@ import "./Header.scss";
 import SectionWrap from "../../wrappers/SectionWrap";
 import jason from "../../assets/jason.png";
 import farba from "../../assets/farba.png";
+import henio from "../../assets/henio.png";
+import henio2 from "../../assets/henio2.png";
+import spawacz from "../../assets/spawacz.png";
 import { FiMail } from "react-icons/fi";
 import { FiPhone } from "react-icons/fi";
 import { FiMapPin } from "react-icons/fi";
@@ -49,11 +52,11 @@ const Header = () => {
             <div className="info-contact">
               <div className="email">
                 <FiMail />
-                ladrowski@email.com
+                h.ladrowski@wp.pl
               </div>
               <div className="phone">
                 <FiPhone />
-                +48 321 654 987
+                +48 790 903 338
               </div>
               <div className="map">
                 <FiMapPin />
@@ -69,7 +72,7 @@ const Header = () => {
               opacity: [0, 1],
               transition: { delay: 0.2, duration: 0.5 },
             }}
-            src={jason}
+            src={spawacz}
             alt=""
             className="profile-photo"
             viewport={{ once: true }}

@@ -53,13 +53,7 @@ const Contact = () => {
 
   return (
     <div className="app__contact">
-      <motion.div
-        className="app__contact"
-        variants={container}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, margin: "0px 0px -300px 0px" }}
-      >
+
         <Map />
         <div className="app__contact-info">
           <div className="cta">
@@ -72,11 +66,11 @@ const Contact = () => {
             <div className="contact-details">
               <div className="email">
                 <FiMail />
-                ladrowski@email.com
+                h.ladrowski@wp.pl
               </div>
               <div className="phone">
                 <FiPhone />
-                +48 321 654 987
+                +48 790 903 338
               </div>
               <div className="location">
                 <FiMapPin />
@@ -128,7 +122,6 @@ const Contact = () => {
             </div>
           )}
         </div>
-      </motion.div>
     </div>
   );
 };
