@@ -26,13 +26,13 @@ const About = () => {
         whileInView="show"
         viewport={{ once: true, margin: "0px 0px -300px 0px" }}
       >
-        <h2>O mnie</h2>
         <div className="app__about-content">
           <div className="app__about-profile">
             <img src={warsztat2} alt="" loading="lazy" />
             <div className="profile-badge">Ponad 10 lat doświadczenia</div>
           </div>
           <div className="app__about-text">
+            <h2>O mnie</h2>
             <p>
               Jestem doświadczonym spawaczem, który łączy precyzję techniczną z kreatywnym
               wyrazem artystycznym. Specjalizuję się w tworzeniu unikalnych rzeźb z metalu

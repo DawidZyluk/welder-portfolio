@@ -27,16 +27,11 @@
     text-transform: uppercase;
     color: var(--primary-color);
     margin-top: 5rem;
-    padding: 0 2rem;
     color: #ffffffda;
 
     @media screen and (max-width: 1900px) {
       font-size: 6rem;
-      margin: 5rem 0;
-    }
-
-    @media screen and (max-width: 1400px) {
-      margin: 3rem 0;
+      margin: 2rem 0;
     }
 
     @media screen and (max-width: 600px) {
