@@ -1,16 +1,14 @@
 import React from "react";
 import "./Work.scss";
 import SectionWrap from "../../wrappers/SectionWrap";
-import brama from "../../assets/brama.jpg";
-import brama2 from "../../assets/brama2.jpg";
-import kwietnik from "../../assets/kwietnik.jpg";
-import kwietnik2 from "../../assets/kwietnik2.jpg";
-import porecz from "../../assets/porecz.jpg";
-import stol from "../../assets/stol.jpg";
-import stol2 from "../../assets/stol2.jpg";
-import rampa from "../../assets/rampa.jpg";
-import kosz from "../../assets/kosz.png";
-import rama from "../../assets/rama.png";
+import brama from "../../assets/work/brama.jpg";
+import brama2 from "../../assets/work/brama2.jpg";
+import kwietnik2 from "../../assets/work/kwietnik2.jpg";
+import porecz from "../../assets/work/porecz.jpg";
+import stol2 from "../../assets/work/stol2.jpg";
+import rampa from "../../assets/work/rampa.jpg";
+import kosz from "../../assets/work/kosz.png";
+import rama from "../../assets/work/rama.png";
 import { motion } from "framer-motion";
 
 const container = {

@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import "./Skills.scss";
-import welding from "../../assets/welding.png";
-import beam from "../../assets/beam.png";
-import car from "../../assets/car.png";
+import welding from "../../assets/skills/welding.png";
+import beam from "../../assets/skills/beam.png";
+import car from "../../assets/skills/car.png";
 import { motion } from "framer-motion";
-import gate from "../../assets/gate.png";
+import gate from "../../assets/skills/gate.png";
 
 const container = {
   hidden: { opacity: 0 },

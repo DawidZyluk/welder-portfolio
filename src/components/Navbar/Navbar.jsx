@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import Button from "./Button";
-import logo from "../../assets/logo2.png";
+import logo from "../../assets/navbar/logo2.png";
 
 const sections = [
   {

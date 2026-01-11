@@ -1,9 +1,8 @@
 import React from "react";
 import "./About.scss";
 import SectionWrap from "../../wrappers/SectionWrap";
-import warsztat from "../../assets/warsztat.jpg";
 import { motion } from "framer-motion";
-import warsztat2 from "../../assets/warsztat2.jpg";
+import warsztat2 from "../../assets/about/warsztat2.jpg";
 
 const container = {
   hidden: { x: -200, opacity: 0 },

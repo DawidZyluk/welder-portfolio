@@ -1,11 +1,8 @@
 import React from "react";
 import "./Header.scss";
 import SectionWrap from "../../wrappers/SectionWrap";
-import jason from "../../assets/jason.png";
-import farba from "../../assets/farba.png";
-import henio from "../../assets/henio.png";
-import henio2 from "../../assets/henio2.png";
-import spawacz from "../../assets/spawacz.png";
+import farba from "../../assets/header/farba.png";
+import spawacz from "../../assets/header/spawacz.png";
 import { FiMail } from "react-icons/fi";
 import { FiPhone } from "react-icons/fi";
 import { FiMapPin } from "react-icons/fi";
