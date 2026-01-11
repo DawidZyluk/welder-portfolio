@@ -6,6 +6,7 @@ import About from "./containers/About/About";
 import Work from "./containers/Work/Work";
 import Navbar from "./components/Navbar/Navbar";
 import Skills from "./containers/Skills/Skills";
+import Sculptures from "./containers/Sculptures/Sculptures";
 import Contact from "./containers/Contact/Contact";
 import { Toaster } from "react-hot-toast";
 
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
       <Header />
       <Skills />
+      <Sculptures />
       <About />
       <Work />
       <Contact />

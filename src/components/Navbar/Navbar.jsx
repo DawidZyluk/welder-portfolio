@@ -9,6 +9,11 @@ const sections = [
     color: "#fcba03",
   },
   {
+    id: "sculptures",
+    title: "Rzeźby",
+    color: "#fcba03",
+  },
+  {
     id: "about",
     title: "o mnie",
     color: "#fcba03",

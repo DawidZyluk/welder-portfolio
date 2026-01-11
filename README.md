@@ -1,7 +1,5 @@
 # Welder Portfolio Website
 
-<img src="./src/assets/shared/screen.png"/>
-
 This is one of my commercial projects of a portfolio website for showcasing the work of a skilled welder. The website is built using React, Sass, Framer Motion, and EmailJS to create a modern and interactive user experience.
 
 Live preview: https://henryk-ladrowski.netlify.app/

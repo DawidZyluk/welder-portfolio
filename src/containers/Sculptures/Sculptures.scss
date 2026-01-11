@@ -1,0 +1,133 @@
+.app__sculptures {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: var(--primary-color);
+  padding: 8rem 5rem;
+
+  h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 5rem;
+  }
+
+  .carousel-section-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .carousel-description {
+    flex: 1;
+    max-width: 550px;
+    min-width: 320px;
+
+    p {
+      font-size: 2rem;
+      line-height: 1.9;
+      color: var(--primary-color);
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  .carousel-counter {
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+  }
+
+
+  @media screen and (max-width: 1400px) {
+    padding: 6rem 4rem;
+
+    h2 {
+      font-size: 4.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .carousel-section-wrapper {
+      gap: 5rem;
+    }
+
+    .carousel-description {
+      max-width: 500px;
+      min-width: 300px;
+
+      p {
+        font-size: 1.9rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .carousel-section-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .carousel-description {
+      max-width: 750px;
+      min-width: auto;
+
+      p {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    padding: 5rem 3rem;
+
+    h2 {
+      font-size: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    .carousel-description {
+      max-width: 650px;
+
+      p {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    padding: 4rem 2rem;
+
+    h2 {
+      font-size: 3.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 3rem 1.5rem;
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .carousel-counter {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+    }
+
+  }
+}
+
