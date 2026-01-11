@@ -1,25 +1,12 @@
 import React, { useState } from "react";
 import SectionWrap from "../../wrappers/SectionWrap";
-import Map from "./Map";
+// import Map from "./Map";
 import emailjs from "@emailjs/browser";
 import { Oval } from "react-loader-spinner";
 import "./Contact.scss";
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 import toast from "react-hot-toast";
 import MessageSent from "./MessageSent";
-import { motion } from "framer-motion";
-
-const container = {
-  hidden: { x: 100, opacity: 0,  },
-  show: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.5,
-      staggerChildren: 0.3,
-    },
-  },
-};
 
 const Contact = () => {
   const [isSent, setIsSent] = useState(false);
@@ -54,7 +41,7 @@ const Contact = () => {
   return (
     <div className="app__contact">
 
-        <Map />
+        {/* <Map /> */}
         <div className="app__contact-info">
           <div className="cta">
             <div className="text">
