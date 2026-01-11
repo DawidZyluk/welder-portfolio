@@ -36,7 +36,7 @@ const Work = () => {
       viewport={{ once: true, margin: "0px 0px -300px 0px" }}
     >
       <motion.div variants={item} className="img-wrap">
-        <img src={brama} alt="" />
+        <img src={brama} alt="" loading="lazy" />
         <div className="img-text">
           <div className="title">Bramy z desek</div>
           <div className="desc">
@@ -46,7 +46,7 @@ const Work = () => {
         </div>
       </motion.div>
       <motion.div variants={item} className="img-wrap">
-        <img src={kwietnik2} alt="" />
+        <img src={kwietnik2} alt="" loading="lazy" />
         <div className="img-text">
           <div className="title">kwietniki</div>
           <div className="desc">
@@ -56,7 +56,7 @@ const Work = () => {
         </div>
       </motion.div>
       <motion.div variants={item} className="img-wrap">
-        <img src={kosz} alt="" />
+        <img src={kosz} alt="" loading="lazy" />
         <div className="img-text">
           <div className="title">kosze myśliwskie</div>
           <div className="desc">
@@ -66,7 +66,7 @@ const Work = () => {
         </div>
       </motion.div>
       <motion.div variants={item} className="img-wrap">
-        <img src={brama2} alt="" />
+        <img src={brama2} alt="" loading="lazy" />
         <div className="img-text">
           <div className="title">bramy metalowe</div>
           <div className="desc">
@@ -76,7 +76,7 @@ const Work = () => {
         </div>
       </motion.div>
       <motion.div variants={item} className="img-wrap">
-        <img src={stol2} alt="" />
+        <img src={stol2} alt="" loading="lazy" />
         <div className="img-text">
           <div className="title">stoły warsztatowe</div>
           <div className="desc">
@@ -86,7 +86,7 @@ const Work = () => {
         </div>
       </motion.div>
       <motion.div variants={item} className="img-wrap">
-        <img src={porecz} alt="" />
+        <img src={porecz} alt="" loading="lazy" />
         <div className="img-text">
           <div className="title">poręczę i uchwyty</div>
           <div className="desc">
@@ -96,7 +96,7 @@ const Work = () => {
         </div>
       </motion.div>
       <motion.div variants={item} className="img-wrap">
-        <img src={rama} alt="" />
+        <img src={rama} alt="" loading="lazy" />
         <div className="img-text">
           <div className="title">
             Konserwacja <br /> i renowacja ram
@@ -108,7 +108,7 @@ const Work = () => {
         </div>
       </motion.div>
       <motion.div variants={item} className="img-wrap">
-        <img src={rampa} alt="" />
+        <img src={rampa} alt="" loading="lazy" />
         <div className="img-text">
           <div className="title">Rampy serwisowe</div>
           <div className="desc">

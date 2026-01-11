@@ -29,7 +29,7 @@ const About = () => {
         <h2>O mnie</h2>
         <div className="app__about-content">
           <div className="app__about-profile">
-            <img src={warsztat2} alt="" />
+            <img src={warsztat2} alt="" loading="lazy" />
             <div className="profile-badge">Ponad 10 lat doświadczenia</div>
           </div>
           <div className="app__about-text">
