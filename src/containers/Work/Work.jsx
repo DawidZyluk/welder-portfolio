@@ -28,14 +28,33 @@ const item = {
 
 const Work = () => {
   return (
-    <motion.div
-      className="app__work"
-      variants={container}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, margin: "0px 0px -300px 0px" }}
-    >
-      <motion.div variants={item} className="img-wrap">
+    <div className="app__work">
+      <motion.h2
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "0px 0px -200px 0px" }}
+        transition={{ duration: 0.5 }}
+      >
+        Projekty
+      </motion.h2>
+      <motion.p
+        className="work-description"
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "0px 0px -200px 0px" }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        Realizuję różnorodne projekty spawalnicze, od konstrukcji przemysłowych po elementy dekoracyjne. 
+        Poniżej prezentuję wybrane przykłady moich prac technicznych, które łączą funkcjonalność z solidnym wykonaniem.
+      </motion.p>
+      <motion.div
+        className="app__work-content"
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "0px 0px -300px 0px" }}
+      >
+        <motion.div variants={item} className="img-wrap">
         <img src={brama} alt="" loading="lazy" />
         <div className="img-text">
           <div className="title">Bramy z desek</div>
@@ -117,7 +136,8 @@ const Work = () => {
           </div>
         </div>
       </motion.div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 

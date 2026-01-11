@@ -60,7 +60,7 @@ const Contact = () => {
             <div className="text">
               <h2>Kontakt</h2>
               <p>
-                Masz pytania? <br /> Skontaktuj się z nami!
+                Masz pytania? <br /> Skontaktuj się ze mną!
               </p>
             </div>
             <div className="contact-details">
