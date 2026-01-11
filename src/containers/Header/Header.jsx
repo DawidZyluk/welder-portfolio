@@ -35,12 +35,11 @@ const Header = () => {
           viewport={{ once: true }}
         >
           <div className="info-title">Sztuka w Metalu</div>
-          <div className="info-slogan">Tworzę wyjątkowe instalacje artystyczne</div>
+          <div className="info-slogan">Rzeźby artystyczne i precyzyjne spawanie</div>
           <div className="info-desc">
-            Specjalizuję się w tworzeniu unikalnych instalacji artystycznych z metalu,
-            łączących precyzję techniczną z kreatywnym wyrazem. Każda praca to połączenie
-            rzemiosła i sztuki, tworzące niepowtarzalne dzieła, które wzbogacają przestrzeń
-            i pobudzają wyobraźnię.
+            Łączę kunszt rzemieślniczy z artystyczną wizją, tworząc unikalne rzeźby z metalu
+            oraz wykonując precyzyjne prace spawalnicze. Każda realizacja to połączenie
+            doświadczenia technicznego z kreatywnym podejściem do formy i materiału.
           </div>
         </motion.div>
         <div className="app__header-profile">

@@ -34,30 +34,19 @@ const About = () => {
           </div>
           <div className="app__about-text">
             <p>
-              Jestem pasjonatem spawania z wieloletnim doświadczeniem w branży
-              metalurgicznej. Moja droga zawodowa rozpoczęła się od nauki
-              podstawowych technik spawalniczych, które następnie rozwijałem w
-              trakcie pracy w różnych firmach przemysłowych.
+              Jestem doświadczonym spawaczem, który łączy precyzję techniczną z kreatywnym
+              wyrazem artystycznym. Specjalizuję się w tworzeniu unikalnych rzeźb z metalu
+              oraz wykonywaniu precyzyjnych prac spawalniczych.
             </p>
             <p>
-              Przez lata zdobywałem umiejętności w obszarach takich jak
-              interpretacja rysunków technicznych, przygotowanie materiałów,
-              oraz wykonywanie precyzyjnych i trwałych spoin. Moje doświadczenie
-              obejmuje pracę zarówno z ręcznymi, jak i zautomatyzowanymi
-              metodami spawania.
+              Moje doświadczenie obejmuje różne metody spawania, interpretację rysunków
+              technicznych oraz ręczne kształtowanie metalu. Tworzę zarówno rzeźby
+              artystyczne, jak i realizuję projekty techniczne, zawsze dbając o najwyższą
+              jakość i trwałość wykonania.
             </p>
             <p>
-              W mojej karierze zawodowej szczególnie dumny jestem z udziału w
-              projektach związanych z budową konstrukcji stalowych dla przemysłu
-              energetycznego oraz produkcją precyzyjnych elementów dla przemysłu
-              motoryzacyjnego. Moje osiągnięcia zawodowe opierają się na
-              dokładności, kreatywności i dążeniu do ciągłego doskonalenia.
-            </p>
-            <p>
-              Jestem zmotywowany do wykorzystania moich umiejętności i
-              doświadczenia, aby przyczynić się do realizacji wyzwań w
-              dziedzinie spawania oraz rozwijania innowacyjnych rozwiązań w
-              branży metalurgicznej.
+              Każda praca, czy to rzeźba artystyczna czy konstrukcja techniczna, jest dla
+              mnie okazją do wykorzystania umiejętności rzemieślniczych i artystycznej wizji.
             </p>
           </div>
         </div>
