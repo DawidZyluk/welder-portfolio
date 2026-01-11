@@ -48,7 +48,7 @@
 
 .gallery-section {
   width: 100%;
-  max-width: 450px;
+  max-width: 500px;
   margin: 3rem 0 0;
 }
 
@@ -181,6 +181,10 @@
     max-width: 450px;
     height: 500px;
   }
+
+  .gallery-section {
+    max-width: 450px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -193,6 +197,10 @@
   .carousel-wrapper {
     max-width: 400px;
     height: 450px;
+  }
+
+  .gallery-section {
+    max-width: 400px;
   }
 
   .carousel-button {
@@ -270,12 +278,12 @@
 @media screen and (max-width: 500px) {
   .carousel-container {
     gap: 0.5rem;
-    max-width: 300px;
+    max-width: 250px;
     min-width: 250px;
   }
 
   .carousel-wrapper {
-    max-width: 300px;
+    max-width: 250px;
     height: 350px;
   }
 
@@ -284,7 +292,7 @@
   }
 
   .gallery-section {
-    max-width: 280px;
+    max-width: 250px;
     margin: 2rem 0 0;
   }
 
@@ -318,7 +326,7 @@
   }
 
   .gallery-section {
-    max-width: 280px;
+    max-width: 100%;
     margin: 2rem 0 0;
   }
 
