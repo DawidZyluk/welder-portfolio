@@ -3,9 +3,6 @@ import "./Header.scss";
 import SectionWrap from "../../wrappers/SectionWrap";
 import farba from "../../assets/header/farba.png";
 import spawacz from "../../assets/header/spawacz.png";
-import { FiMail } from "react-icons/fi";
-import { FiPhone } from "react-icons/fi";
-import { FiMapPin } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const text = {
@@ -37,29 +34,13 @@ const Header = () => {
           whileInView="show"
           viewport={{ once: true }}
         >
-          <div className="info-title">Henryk Ladrowski</div>
-          <span>Spawacz / Metalurg</span>
+          <div className="info-title">Sztuka w Metalu</div>
+          <div className="info-slogan">Tworzę wyjątkowe instalacje artystyczne</div>
           <div className="info-desc">
-            Jestem doświadczonym spawaczem i metalurgiem z solidnymi
-            umiejętnościami w obszarze obróbki metali. Posiadam bogate
-            doświadczenie w interpretacji rysunków technicznych, przygotowywaniu
-            materiałów oraz wykonywaniu spawania różnymi metodami.
-          </div>
-          <div className="info-cta">
-            <div className="info-contact">
-              <div className="email">
-                <FiMail />
-                h.ladrowski@wp.pl
-              </div>
-              <div className="phone">
-                <FiPhone />
-                +48 790 903 338
-              </div>
-              <div className="map">
-                <FiMapPin />
-                Trzebnice 137, 59-140 Chocianów
-              </div>
-            </div>
+            Specjalizuję się w tworzeniu unikalnych instalacji artystycznych z metalu,
+            łączących precyzję techniczną z kreatywnym wyrazem. Każda praca to połączenie
+            rzemiosła i sztuki, tworzące niepowtarzalne dzieła, które wzbogacają przestrzeń
+            i pobudzają wyobraźnię.
           </div>
         </motion.div>
         <div className="app__header-profile">
@@ -83,7 +64,6 @@ const Header = () => {
             src={farba}
             alt="circle"
             viewport={{ once: true }}
-            // viewport={{ once: true }}
           />
         </div>
       </div>

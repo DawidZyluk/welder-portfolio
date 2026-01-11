@@ -32,80 +32,29 @@
 
   &-info {
     flex: 0.8;
-    margin-top: 5rem;
     z-index: 2;
-    margin-left: 6rem;
 
     .info-title {
       font-size: 6rem;
       text-transform: uppercase;
       font-weight: bold;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       color: var(--primary-color);
     }
 
-    span {
+    .info-slogan {
       color: var(--secondary-color);
-      font-size: 2.2rem;
-      display: block;
-      margin-bottom: 2rem;
+      font-size: 2.4rem;
+      font-weight: 500;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
     }
 
     .info-desc {
       font-size: 2rem;
-      width: 90%;
       color: var(--primary-color);
-    }
-
-    .info-cta {
-      margin-top: 3rem;
-
-      .motto {
-        color: var(--secondary-color);
-        font-size: 2rem;
-        height: 1rem;
-        width: 20rem;
-        // font-weight: bold;
-        text-transform: uppercase;
-        border-bottom: 4px solid var(--secondary-color);
-      }
-
-      button {
-        font-size: 2rem;
-        border: 2px solid var(--secondary-color);
-        padding: 1.2rem 2.4rem;
-        border-radius: 0.4em;
-        background-color: transparent;
-        color: var(--primary-color);
-        transition: all 0.3s;
-        box-shadow: 0 5px 25px 2px #3d3d3d22;
-
-        &:hover {
-          cursor: pointer;
-          background-color: var(--secondary-color);
-          color: black;
-        }
-      }
-
-      .info-contact {
-        display: flex;
-        flex-direction: column;
-        margin-top: 3rem;
-
-        div {
-          display: flex;
-          align-items: center;
-          height: 5rem;
-          font-size: 2rem;
-          color: var(--primary-color);
-        }
-
-        svg {
-          font-size: 2.4rem;
-          margin-right: 1rem;
-          color: var(--secondary-color);
-        }
-      }
+      line-height: 1.6;
     }
   }
 
@@ -150,6 +99,7 @@
     flex-direction: column;
 
     &-info {
+      text-align: center;
       order: 2;
       width: 80%;
       margin: 6rem auto 7rem;
@@ -171,32 +121,9 @@
         margin: 2rem 0;
       }
 
-      span {
+      .info-slogan {
         font-size: 2.2rem;
-        margin-bottom: 2rem;
-      }
-
-      .info-desc {
-        font-size: 2rem;
-        width: 90%;
-      }
-
-      .info-cta {
-        margin-top: 3rem;
-
-        .info-contact {
-          margin-top: 3rem;
-
-          div {
-            height: 5rem;
-            font-size: 2rem;
-          }
-
-          svg {
-            font-size: 2.4rem;
-            margin-right: 1rem;
-          }
-        }
+        margin-bottom: 2.5rem;
       }
     }
 
@@ -242,14 +169,13 @@
   }
 
   @media screen and (max-width: 700px) {
-    &-info {
-      span {
-        font-size: 1.8rem;
-      }
-    }
-
     .info-title {
       font-size: 4rem;
+    }
+
+    .info-slogan {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
     }
 
     .info-desc {
