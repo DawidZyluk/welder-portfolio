@@ -6,10 +6,6 @@ import usePathname from "../../hooks/usePathname";
 
 const navItems = [
   {
-    title: "Home",
-    href: "/#home",
-  },
-  {
     title: "O mnie",
     href: "/#about",
   },

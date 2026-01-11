@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import Button from "./Button";
-import logo from "../../assets/navbar/logo2.png";
 
 const sections = [
-  {
-    id: "home",
-    title: "home",
-    color: "#216fed",
-  },
   {
     id: "skills",
     title: "umiejętnośći",
@@ -47,9 +41,10 @@ const Navbar = () => {
       id="navbar"
       className={`${opacity ? "app__navbar opacity" : "app__navbar"}`}
     >
-      <div className="logo">
-        <img src={logo} alt="" />
-      </div>
+      <a href="#home" className="navbar-logo">
+        <span className="logo-first">HENRYK</span>
+        <span className="logo-second">LADROWSKI</span>
+      </a>
       <div className="nav">
         <ul>
           {sections.map((data) => (
