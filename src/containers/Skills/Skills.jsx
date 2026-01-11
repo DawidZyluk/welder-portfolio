@@ -24,6 +24,14 @@ const item = {
 const Skills = () => {
   return (
     <div id="skills" className="app__header-skills">
+      <motion.h2
+        variants={item}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "0px 0px -200px 0px" }}
+      >
+        Czym się zajmuję?
+      </motion.h2>
       <motion.div
         className="skills-badges"
         variants={container}

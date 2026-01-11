@@ -18,7 +18,7 @@ const background = {
   hidden: { scale: 0 },
   show: {
     scale: 1,
-    transition: { delay: 0.6, duration: 0.5, ease: "easeInOut" },
+    transition: { delay: 0.4, duration: 0.4, ease: "easeInOut" },
   },
 };
 
@@ -47,7 +47,7 @@ const Header = () => {
             whileInView={{
               y: [-100, 0],
               opacity: [0, 1],
-              transition: { delay: 0.2, duration: 0.5 },
+              transition: { delay: 0.2, duration: 0.3 },
             }}
             src={spawacz}
             alt=""
