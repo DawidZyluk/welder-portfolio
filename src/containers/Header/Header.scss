@@ -129,13 +129,6 @@
       position: absolute;
       object-fit: contain;
       z-index: 4;
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-
-      @media screen and (max-width: 500px) {
-        // margin-top: 3rem;
-        
-      }
     }
 
     .fade {
