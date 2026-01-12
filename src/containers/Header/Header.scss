@@ -215,25 +215,11 @@
 
   @media screen and (max-width: 700px) {
     padding: 8rem 2rem 0;
+    min-height: 60rem;
 
     &-info {
       width: 95%;
       margin: 4rem auto 5rem;
-
-      .info-title {
-        font-size: clamp(2.5rem, 6vw, 3.5rem);
-        margin: 1.5rem 0;
-      }
-
-      .info-slogan {
-        font-size: clamp(1.3rem, 2.8vw, 1.7rem);
-        margin-bottom: 1.5rem;
-      }
-
-      .info-desc {
-        font-size: clamp(1.2rem, 2vw, 1.5rem);
-        line-height: 1.5;
-      }
     }
 
     &-profile {
@@ -256,29 +242,12 @@
   }
 
   @media screen and (max-width: 500px) {
-    padding: 6rem 1rem 3rem;
-    min-height: auto;
+    padding: 16rem 1rem 3rem;
 
     &-info {
       width: 100%;
       margin: 2rem auto 3rem;
       padding: 0 1rem;
-
-      .info-title {
-        font-size: clamp(2rem, 5vw, 2.8rem);
-        margin: 1rem 0;
-      }
-
-      .info-slogan {
-        font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-        margin-bottom: 1.5rem;
-        letter-spacing: 0.05em;
-      }
-
-      .info-desc {
-        font-size: clamp(1rem, 1.8vw, 1.3rem);
-        line-height: 1.4;
-      }
     }
 
     &-profile {
