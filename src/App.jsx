@@ -12,8 +12,17 @@ import { Toaster } from "react-hot-toast";
 
 function App() {
   useEffect(() => {
+    // Prevent browser's automatic scroll restoration
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    
+    // Ensure page starts at top on initial load (only if no hash)
     if (window.location.pathname === "/" && !window.location.hash) {
-      window.scrollTo(0, 0);
+      // Use requestAnimationFrame to ensure this runs after all components mount
+      requestAnimationFrame(() => {
+        window.scrollTo(0, 0);
+      });
     }
   }, []);
 

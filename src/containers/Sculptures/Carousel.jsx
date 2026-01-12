@@ -7,6 +7,7 @@ const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const thumbnailRefs = useRef([]);
+  const isInitialMount = useRef(true);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -29,6 +30,12 @@ const Carousel = () => {
   };
 
   useEffect(() => {
+    // Skip scrollIntoView on initial mount to prevent page jump
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
+
     if (thumbnailRefs.current[currentIndex]) {
       thumbnailRefs.current[currentIndex].scrollIntoView({
         behavior: 'smooth',
